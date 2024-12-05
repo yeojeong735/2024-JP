@@ -33,6 +33,7 @@ public class Child extends Parent{
 }
 
 ##### 3. 메인 클래스 - ChildExample.java
+```java
 public class ChildExample {
 
 	public static void main(String[] args) {
@@ -42,4 +43,13 @@ public class ChildExample {
 
 }
 ```
+##### 출력 결과
+```
+Parent(String nation) call
+Parent() call
+child(String name) call
+child() call
+```
 
+##### 이유
+###### - 자식 클래스의 생성자가 호출되면, 항상 부모 클래스 생성자를 먼저 호출해야하므로 Parent.java 먼저 출력되고 Child.java가 출력된다.
